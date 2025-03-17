@@ -13,4 +13,17 @@ function isPrime(num) {
     
     return true;
   }
+
+
+  // Hàm sai - Tính giai thừa của một số
+function factorial(num) {
+  // Bug: Không kiểm tra số âm
+  // Bug: Thiếu điều kiện dừng đệ quy khi num = 0
+  return num * factorial(num - 1);
+  // Hàm này sẽ gây ra lỗi Maximum call stack size exceeded
+  // vì đệ quy vô hạn
+}
   
+
+
+fc
